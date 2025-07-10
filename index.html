@@ -121,7 +121,7 @@
                     <p class="text-ocean-100">La Jolla's Premier Oceanfront Estate</p>
                 </div>
                 <div class="text-right">
-                    <div class="text-3xl font-bold text-sand-300">$108,000,000</div>
+                    <div class="text-4xl font-bold text-sand-300">$108,000,000</div>
                     <div class="text-sm text-ocean-100">Luxury Oceanfront Mansion</div>
                 </div>
             </div>
@@ -536,7 +536,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-4xl font-bold mb-8">🏖️ Schedule Your Private Showing</h2>
             <div class="max-w-2xl mx-auto">
-                <form class="space-y-6" data-netlify="true" name="luxury-contact">
+                <form class="space-y-6" netlify name="luxury-contact">
+                    <input type="hidden" name="form-name" value="luxury-contact" />
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <input type="text" name="name" placeholder="Full Name" required class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-xl text-white placeholder-white/70 focus:outline-none focus:border-sand-300 focus:bg-white/30">
                         <input type="email" name="email" placeholder="Email Address" required class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-xl text-white placeholder-white/70 focus:outline-none focus:border-sand-300 focus:bg-white/30">
@@ -625,7 +626,8 @@
     <div id="virtual-showing-modal" style="display:none;" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
         <div class="bg-white rounded-2xl p-8 max-w-md w-full mx-4 shadow-2xl">
             <h3 class="text-2xl font-bold text-ocean-900 mb-4">📅 Book Live Virtual Tour</h3>
-            <form data-netlify="true" name="virtual-tour">
+            <form netlify name="virtual-tour">
+                <input type="hidden" name="form-name" value="virtual-tour" />
                 <div class="space-y-4">
                     <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3 border border-ocean-200 rounded-xl focus:outline-none focus:border-ocean-400">
                     <input type="email" name="email" placeholder="Email Address" required class="w-full px-4 py-3 border border-ocean-200 rounded-xl focus:outline-none focus:border-ocean-400">
@@ -649,7 +651,8 @@
     <div id="luxury-financing-modal" style="display:none;" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
         <div class="bg-white rounded-2xl p-8 max-w-md w-full mx-4 shadow-2xl">
             <h3 class="text-2xl font-bold text-ocean-900 mb-4">💰 Luxury Property Financing</h3>
-            <form data-netlify="true" name="financing-inquiry">
+            <form netlify name="financing-inquiry">
+                <input type="hidden" name="form-name" value="financing-inquiry" />
                 <div class="space-y-4">
                     <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3 border border-ocean-200 rounded-xl focus:outline-none focus:border-ocean-400">
                     <input type="email" name="email" placeholder="Email Address" required class="w-full px-4 py-3 border border-ocean-200 rounded-xl focus:outline-none focus:border-ocean-400">
@@ -785,9 +788,8 @@
         }
       },
       "serviceType": "Luxury Real Estate Sales",
-      "priceRange": "$$$"
+      "priceRange": "$$"
     }
     </script>
-
-    </body>
+</body>
 </html>
